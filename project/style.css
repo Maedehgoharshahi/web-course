@@ -181,12 +181,12 @@ input,textarea {
 
 input {
     width: 150px;
-    animation: move-down 1s ease-in-out ;
+    animation: move-right 1s ease-in-out ;
 }
 
 textarea {
     width: 203px;
-    animation: move-up 1s ease-in-out ;
+    animation: move-left 1s ease-in-out ;
 }
 
 label {
@@ -203,7 +203,7 @@ input[type="submit"] {
     font-weight: bold;
     margin-bottom: 7px;
     color: #acb992;
-    animation: move-up 1s ease-in-out ;
+    animation: opacity 1.5s ease-in-out ;
 }
 
 input[type="submit"]:hover {
