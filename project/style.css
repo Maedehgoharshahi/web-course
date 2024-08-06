@@ -179,7 +179,7 @@ input,textarea {
     background-color: #e9e5d3;
 }
 
-input {
+input:not([type="submit"]) {
     width: 150px;
     animation: move-right 1s ease-in-out ;
 }
@@ -234,28 +234,6 @@ input[type="submit"]:hover {
     }
 }
 
-@keyframes move-up {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes move-down {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
 @keyframes opacity {
     0% {
         opacity: 0;
@@ -306,12 +284,12 @@ input[type="submit"]:hover {
     }
 
     #summary div p {
-        animation: move-down 1s ease-in-out ;
+        animation: move-right 1s ease-in-out ;
         flex-basis: 225px;
     }
 
     #summary div img {
-        animation: opacity 1.5s ease-in-out ;
+        animation: move-right 1s ease-in-out ;
         }
 
     table {
@@ -319,6 +297,13 @@ input[type="submit"]:hover {
         text-align: center;
     }
 
+    #experience ul {
+        animation: move-right 1s ease-in-out ;
+    }
+
+    textarea {
+        animation: move-right 1s ease-in-out ;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
